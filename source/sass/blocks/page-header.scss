@@ -1,0 +1,18 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+
+  width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: 764px;
+  }
+}
+
+@media (min-width: $mobile-width) {
+  .page-header {
+    width: 1440px;
+  }
+}

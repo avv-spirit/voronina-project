@@ -1,0 +1,58 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "source-serif-pro", serif;
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/SourceSerifPro-Light.otf.woff2") format("woff2"), url("../fonts/SourceSerifPro-Light.otf.woff") format("woff");
+}
+
+@font-face {
+  font-family: "source-serif-pro", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/SourceSerifPro-Regular.otf.woff2") format("woff2"), url("../fonts/SourceSerifPro-Regular.otf.woff") format("woff");
+}
+
+@font-face {
+  font-family: "source-serif-pro", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/SourceSerifPro-Semibold.otf.woff2") format("woff2"), url("../fonts/SourceSerifPro-Semibold.otf.woff") format("woff");
+}
+
+@font-face {
+  font-family: "source-serif-pro", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/SourceSerifPro-Bold.otf.woff2") format("woff2"), url("../fonts/SourceSerifPro-Bold.otf.woff") format("woff");
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

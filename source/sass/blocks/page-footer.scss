@@ -1,0 +1,22 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+
+  width: 320px;
+}
+
+.page-footer__container {
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    width: 764px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: 1440px;
+  }
+}
