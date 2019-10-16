@@ -4,35 +4,39 @@ img {
 }
 
 @font-face {
-  font-family: "Source Serif Pro", serif;
-  font-style: normal;
+  font-family: "Source Serif Pro";
   font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
   font-display: swap;
-  src: url("../fonts/sourceserifpro-light.woff2") format("woff2"), url("../fonts/sourceserifpro-light.woff") format("woff");
+  src: url("../fonts/SourceSerifPro-Light.ttf.woff2") format("woff2"), url("../fonts/SourceSerifPro-light.ttf.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Source Serif Pro", serif;
-  font-style: normal;
+  font-family: "Source Serif Pro";
   font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
   font-display: swap;
-  src: url("../fonts/sourceserifpro-regular.woff2") format("woff2"), url("../fonts/sourceserifpro-regular.woff") format("woff");
+  src: url("../fonts/SourceSerifPro-Regular.ttf.woff2") format("woff2"), url("../fonts/SourceSerifPro-Regular.ttf.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Source Serif Pro", serif;
-  font-style: normal;
+  font-family: "Source Serif Pro";
   font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
   font-display: swap;
-  src: url("../fonts/sourceserifpro-semibold.woff2") format("woff2"), url("../fonts/sourceserifpro-semibold.woff") format("woff");
+  src: url("../fonts/SourceSerifPro-Semibold.ttf.woff2") format("woff2"), url("../fonts/SourceSerifPro-Semibold.ttf.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Source Serif Pro", serif;
-  font-style: normal;
+  font-family: "Source Serif Pro";
   font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
   font-display: swap;
-  src: url("../fonts/sourceserifpro-bold.woff2") format("woff2"), url("../fonts/sourceserifpro-bold.woff") format("woff");
+  src: url("../fonts/SourceSerifPro-Bold.ttf.woff2") format("woff2"), url("../fonts/SourceSerifPro-Bold.ttf.woff") format("woff");
 }
 
 .visually-hidden:not(:focus):not(:active),
