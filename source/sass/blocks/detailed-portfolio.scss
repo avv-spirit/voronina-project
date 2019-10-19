@@ -1,23 +1,18 @@
-.page-main {
+.detailed-portfolio {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
 
   width: 320px;
-  margin: 0 auto;
-
-  z-index: 0;
-  outline: 1px solid red;
 }
 
 @media (min-width: $tablet-width) {
-  .page-main {
+  .detailed-portfolio {
     width: 764px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-main {
+  .detailed-portfolio {
     width: 1440px;
   }
 }

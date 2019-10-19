@@ -1,0 +1,40 @@
+.daria-voronina {
+  display: flex;
+  flex-direction: column;
+
+  width: 320px;
+  height: 480px;
+
+  color: $white;
+  background-color: $icon-gray;
+  background-image: url("../img/daria-mobile.jpg");
+}
+
+.daria-voronina__title {
+  color: $white;
+
+  padding-left: 15px;
+  font-weight: 400;
+}
+
+.daria-voronina__description {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.daria-voronina__link {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .daria-voronina {
+    width: 764px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .daria-voronina {
+    width: 1440px;
+  }
+}

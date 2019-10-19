@@ -1,8 +1,10 @@
 .page-footer {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 
   width: 320px;
+  outline: 1px solid red;
 }
 
 .page-footer__container {
