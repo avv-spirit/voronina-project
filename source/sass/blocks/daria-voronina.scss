@@ -8,13 +8,19 @@
   color: $white;
   background-color: $icon-gray;
   background-image: url("../img/daria-mobile.jpg");
+  background-repeat: no-repeat;
+}
+
+.daria-voronina__wrapper {
+  padding-top: 173px;
+  padding-left: 15px;
+  padding-right: 34px;
 }
 
 .daria-voronina__title {
   color: $white;
-
-  padding-left: 15px;
-  font-weight: 400;
+  font-size: $font-voronina;
+  font-weight: 600;
 }
 
 .daria-voronina__description {
@@ -23,18 +29,115 @@
 }
 
 .daria-voronina__link {
+  color: $white;
+
+  font-family: "Source Serif Pro", serif;
+  font-size: $font-btn;
+  font-weight: 600;
+  letter-spacing: 2px;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.daria-voronina__link:hover,
+.daria-voronina__link:active {
+  border-bottom: 2px solid $white;
+}
+
+.daria-voronina__social {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
   .daria-voronina {
     width: 764px;
+    height: 823px;
+    background-position: 100% 50%;
+    background-color: $nav-menu;
+    background-image: url("../img/plate-glass-tablet.jpg");
+  }
+
+  .daria-voronina__wrapper {
+    position: relative;
+    padding-top: 330px;
+    padding-left: 60px;
+  }
+
+  .daria-voronina__wrapper::before {
+    position: absolute;
+    content: "";
+    top: 162px;
+    right: 50px;
+    display: block;
+    width: 327px;
+    height: 499px;
+
+    background-image: url("../img/daria-photo.jpg");
+  }
+
+  .daria-voronina__title {
+    margin-bottom: 40px;
+    width: 300px;
+
+    color: $black;
+    font-size: $font-nav-big;
+    font-weight: 600;
+  }
+
+  .daria-voronina__description {
+    margin-bottom: 40px;
+    width: 270px;
+
+    color: $black;
+    font-size: $nav-tablet;
+    font-weight: 400;
+  }
+
+  .daria-voronina__link {
+    color: $black;
+
+    font-size: $nav-tablet;
+    font-weight: bold;
+  }
+
+  .daria-voronina__link:hover,
+  .daria-voronina__link:active {
+    border-bottom: 2px solid $black;
+  }
+
+  .daria-voronina__social {
+    display: block;
+    margin-top: 210px;
+
+    color: $social;
+    font-size: $font-small;
   }
 }
 
 @media (min-width: $desktop-width) {
   .daria-voronina {
     width: 1440px;
+    height: 780px;
+    background-position: 100% 50%;
+    background-color: $nav-menu;
+    background-image: url("../img/plate-glass.png");
+  }
+
+  .daria-voronina__wrapper {
+    position: relative;
+    padding-top: 330px;
+    padding-left: 60px;
+  }
+
+  .daria-voronina__wrapper::before {
+    position: absolute;
+    content: "";
+    top: 164px;
+    right: 432px;
+    display: block;
+    width: 348px;
+    height: 533px;
+
+    background-image: url("../img/daria-photo.jpg");
   }
 }

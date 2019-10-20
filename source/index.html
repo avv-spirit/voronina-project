@@ -8,7 +8,7 @@
     <link rel="preload" href="fonts/SourceSerifPro-Light.ttf.woff2" as="font">
     <link rel="preload" href="fonts/SourceSerifPro-Regular.ttf.woff2" as="font">
     <link rel="preload" href="fonts/SourceSerifPro-Semibold.ttf.woff2" as="font">
-    <!--<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700&display=swap" rel="stylesheet">-->
+    <link rel="preload" href="fonts/SourceSerifVariable-Roman.ttf.woff2" as="font">
     <link href="css/style.css" rel="stylesheet">
     <script src="js/picturefill.min.js" async=""></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -16,9 +16,9 @@
   <body>
     <div class="body-wrapper">
       <header class="page-header">
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
             <a class="main-nav__logo" href="">VORONINA.</a>
-            <button class="main-nav__toggle" type="button" aria-label="Открыть меню">123</button>
+            <button class="main-nav__toggle" type="button" aria-label="Открыть меню"><span class="visually-hidden">Открыть меню</span></button>
             <div class="main-nav__wrapper">
               <ul class="main-nav__list">
                 <li class="main-nav__item"><a href="#portfolio">Портфолио</a></li>
@@ -26,17 +26,19 @@
                 <li class="main-nav__item"><a href="#price">Стоимость</a></li>
                 <li class="main-nav__item"><a href="#contacts">Контакты</a></li>
               </ul>
-              <span class="main-nav__telnumber main-nav__hidden">+ 7 916 66 77 112</span>
+              <span class="main-nav__telnumber">+ 7 916 66 77 112</span>
             </div>
         </nav>
       </header>
       <main class="page-main">
         <section class="daria-voronina">
-          <h1 class="daria-voronina__title">Дарья Воронина</h1>
-          <p class="daria-voronina__description">Food — фотограф и food — стилист
-            в Москве и Московской области</p>
-          <a href="#portfolio" class="daria-voronina__link">Портфолио</a>
-          <p class="daria-voronina__instagram-facebook">INSTAGRAM &ndash; FACEBOOK</p>
+          <div class="daria-voronina__wrapper">
+            <h1 class="daria-voronina__title">Дарья Воронина</h1>
+            <p class="daria-voronina__description">Food — фотограф и food — стилист
+              в Москве и Московской области</p>
+            <a href="#portfolio" class="daria-voronina__link">Портфолио &mdash;</a>
+            <p class="daria-voronina__social">INSTAGRAM &ndash; FACEBOOK</p>
+          </div>
         </section>
         <section class="portfolio">
           <h2 class="portfolio-title">Портфолио</h2>
