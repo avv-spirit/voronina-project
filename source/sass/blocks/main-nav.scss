@@ -191,6 +191,7 @@
     letter-spacing: 4px;
     font-size: $nav-tablet;
     font-weight: 300;
+    z-index: 3;
   }
 
   .main-nav--closed .main-nav__toggle {
@@ -202,6 +203,7 @@
   .main-nav--opened .main-nav__toggle {
     top: 14px;
     right: 5px;
+    z-index: 3;
   }
 
   .main-nav--closed .main-nav__wrapper {
@@ -221,6 +223,7 @@
   .main-nav__wrapper {
     width: 100%;
     height: 823px;
+    z-index: 2;
   }
 
   .main-nav__list {
@@ -269,10 +272,96 @@
     font-size: $font-nav-big;
     padding: 10px 0;
   }
+
+  .main-nav__telnumber {
+    position: absolute;
+    content: "";
+    top: 18px;
+    right: 104px;
+
+    display: block;
+    font-weight: 600;
+    z-index: 1;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav {
     width: 1440px;
+    // height: 30px;
+  }
+
+  .main-nav__logo {
+    width: 254px;
+    height: 76px;
+
+    font-size: $font-middle;
+    z-index: 1;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--closed .main-nav__wrapper {
+    position: absolute;
+    top: 30px;
+    display: flex;
+    flex-direction: row;
+    width: 1440px;
+    height: inherit;
+    background-color: transparent;
+  }
+
+  .main-nav__list {
+    margin-left: 320px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 0;
+
+    box-sizing: border-box;
+  }
+
+  .main-nav__item {
+    margin: 0 30px;
+    padding: 0;
+  }
+
+  .main-nav__item:hover {
+    background-color: transparent;
+  }
+
+  .main-nav__item a {
+    margin: 0;
+    padding: 0;
+    border-bottom: none;
+    color: $nav-text;
+    font-size: $font-middle;
+    font-weight: 400;
+
+    &:hover {
+      background-color: transparent;
+      border-bottom: 3px solid $frame-color;
+    }
+  }
+
+  .main-nav__item:first-child {
+    display: none;
+  }
+
+  .main-nav__item:first-child::before {
+    display: none;
+  }
+
+  .main-nav__item:last-child::before {
+    display: none;
+  }
+
+  .main-nav__telnumber {
+    top: 30px;
+    right: 400px;
+    color: $nav-text;
   }
 }
