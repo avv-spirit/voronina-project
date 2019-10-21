@@ -1,0 +1,45 @@
+.portfolio {
+  display: block;
+  width: 320px;
+  text-align: center;
+}
+
+.portfolio-title {
+  position: relative;
+  margin-top: 150px;
+  margin-bottom: 50px;
+
+  font-size: $font-middle;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.portfolio-title::before {
+  position: absolute;
+  content: "";
+  top: -66px;
+  left: 159px;
+
+  width: 2px;
+  height: 30px;
+
+  background-color: $pink-line;
+}
+
+.portfolio__coctails-title,
+.portfolio__coctails-description {
+  text-align: left;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.portfolio__coctails-title {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.portfolio__coctails-description {
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 30px;
+}

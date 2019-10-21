@@ -1,8 +1,71 @@
 .detailed-portfolio {
+  position: relative;
   display: flex;
   flex-direction: column;
 
   width: 320px;
+  margin-top: 20px;
+}
+
+.detailed-portfolio__photo {
+  display: none;
+}
+
+.detailed-portfolio__description-text {
+  position: absolute;
+
+  top: 104px;
+  left: 48px;
+  right: 24px;
+  font-size: 14px;
+  color: $white;
+}
+
+.detailed-portfolio__title {
+  font-size: $font-middle;
+  font-weight: 600;
+}
+
+.detailed-portfolio__btn {
+  position: relative;
+
+  margin-top: 6px;
+  margin-left: -4px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 6px;
+
+  color: $white;
+  background-color: transparent;
+
+  letter-spacing: 2px;
+
+  font-family: "Source Serif Pro", serif;
+  font-size: $font-btn;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  box-sizing: border-box;
+  border-bottom: 2px solid $white;
+}
+
+.detailed-portfolio__btn:hover,
+.detailed-portfolio__btn:active {
+  border-bottom: 2px solid $frame-color;
+}
+
+.detailed-portfolio__btn::before {
+  position: absolute;
+  content: "";
+
+  right: -32px;
+  bottom: -2px;
+  width: 26px;
+  height: 26px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-image: url("../img/pdf-icon.svg");
 }
 
 @media (min-width: $tablet-width) {
