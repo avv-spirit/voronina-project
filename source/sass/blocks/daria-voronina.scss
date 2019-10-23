@@ -112,6 +112,7 @@
 
     color: $social;
     font-size: $font-small;
+    letter-spacing: 1px;
   }
 }
 
@@ -200,5 +201,9 @@
 
     background-repeat: no-repeat;
     background-image: url("../img/pagination-1.png");
+  }
+
+  .daria-voronina__social {
+    font-size: $font-btn;
   }
 }
