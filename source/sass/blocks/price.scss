@@ -1,0 +1,52 @@
+.price {
+  display: block;
+  text-align: center;
+}
+
+.price__main-title {
+  position: relative;
+  margin-top: 150px;
+
+  font-size: $font-middle;
+  font-weight: 600;
+  text-align: center;
+}
+
+.price__main-title::before {
+  position: absolute;
+  content: "";
+  top: -66px;
+  left: 159px;
+
+  width: 2px;
+  height: 30px;
+
+  background-color: $pink-line;
+}
+
+.price__work-hours {
+  text-align: center;
+}
+
+.price__title {
+  display: block;
+  margin-right: 60px;
+
+  color: $frame-color;
+  font-weight: bold;
+}
+
+.price__title-intire {
+  display: block;
+  margin-left: 124px;
+}
+
+.price__description {
+  margin-top: 0;
+  margin-bottom: 70px;
+  margin-left: 36px;
+  margin-right: 36px;
+
+  font-size: $font-btn;
+  font-weight: 600;
+}

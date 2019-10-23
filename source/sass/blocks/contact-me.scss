@@ -1,0 +1,51 @@
+.contact-me {
+  display: block;
+  text-align: center;
+}
+
+.contact-me__title {
+  position: relative;
+  margin-top: 50px;
+
+  font-size: $font-middle;
+  font-weight: 600;
+  text-align: center;
+}
+
+.contact-me__title::before {
+  position: absolute;
+  content: "";
+  top: -66px;
+  left: 159px;
+
+  width: 2px;
+  height: 30px;
+
+  background-color: $pink-line;
+}
+
+.contact-me__skype {
+  letter-spacing: 2px;
+  font-size: $font-btn;
+  font-weight: 600;
+}
+
+.contact-me__email {
+  letter-spacing: 2px;
+  font-size: $font-btn;
+  font-weight: 600;
+}
+
+.contact-me__phone {
+  letter-spacing: 1px;
+  font-size: $font-btn;
+  font-weight: 600;
+}
+
+.contact-me__green {
+  color: $frame-color;
+
+  letter-spacing: 1px;
+  font-size: $font-nav;
+  font-weight: 600;
+}
