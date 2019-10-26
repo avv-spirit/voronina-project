@@ -70,7 +70,77 @@
 
 @media (min-width: $tablet-width) {
   .detailed-portfolio {
+    margin-top: 150px;
     width: 764px;
+    background-color: transparent;
+  }
+
+  .detailed-portfolio__photos {
+    position: absolute;
+    width: 602px;
+    height: 298px;
+    top: -28px;
+    left: 0;
+    background-color: $nav-menu;
+    z-index: -1;
+  }
+
+  .detailed-portfolio__photos img {
+    display: none;
+  }
+
+  .detailed-portfolio__description-text {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    margin-left: 116px;
+    margin-right: 62px;
+    padding-top: 70px;
+    padding-left: 153px;
+
+    width: 582px;
+    height: 343px;
+    color: $black;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 8px solid $frame-color;
+  }
+
+  .detailed-portfolio__description-text::before {
+    position: absolute;
+    content: "";
+    top: 37px;
+    left: 0;
+    width: 260px;
+    height: 274px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../img/dish-eggs-tablet.jpg");
+  }
+
+  .detailed-portfolio__title {
+    margin-top: 0;
+    width: 264px;
+    font-size: $font-portfolio;
+  }
+
+  .detailed-portfolio__description {
+    margin-top: 0;
+    width: 234px;
+    font-size: $nav-tablet;
+  }
+
+  .detailed-portfolio__btn {
+    width: 160px;
+    color: $black;
+    border-color: $black;
+  }
+
+  .detailed-portfolio__btn::before {
+    right: -50px;
+    bottom: -10px;
+    width: 32px;
+    height: 36px;
   }
 }
 

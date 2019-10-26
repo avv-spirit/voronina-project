@@ -26,6 +26,10 @@
   background-color: $pink-line;
 }
 
+.portfolio__coctails-tablet {
+  display: none;
+}
+
 .portfolio__coctails-title,
 .portfolio__coctails-description {
   text-align: left;
@@ -43,3 +47,94 @@
   margin-top: 0;
   margin-bottom: 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 768px;
+  }
+
+  .portfolio-title {
+    font-size: $font-portfolio;
+  }
+
+  .portfolio-title::before {
+    left: 384px;
+  }
+
+  .portfolio__images {
+    display: flex;
+    padding: 0 52px;
+  }
+
+  .portfolio__coctails-mobile {
+    display: none;
+  }
+
+  .portfolio__coctails-tablet {
+    display: flex;
+  }
+
+  .portfolio__coctails--modify {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .portfolio__coctails-title {
+    margin-top: 10px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .portfolio__coctails-description {
+    font-size: $font-description;
+    margin-left: 0;
+    margin-right: 9px;
+  }
+
+  .portfolio__images {
+    margin-left: 16px;
+  }
+
+  .portfolio__container {
+    margin-left: 10px;
+    margin-right: 9px;
+  }
+  /*.portfolio__coctails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .portfolio__coctails-mobile {
+    display: none;
+  }
+
+  .portfolio__coctails-image {
+    display: flex;
+  }
+
+  .portfolio__container {
+    margin-top: 70px;
+    margin-bottom: 160px;
+  }
+
+  .portfolio__coctails-title {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .portfolio__coctails-description {
+    font-size: $nav-tablet;
+    margin: 0;
+  }*/
+}
+/*
+@media (min-width: $desktop-width) {
+
+}
+*/
