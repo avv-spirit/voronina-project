@@ -113,3 +113,25 @@
 .about-me__btn:active {
   border-bottom: 2px solid $frame-color;
 }
+
+@media (min-width: $tablet-width) {
+  .about-me {
+    width: 768px;
+  }
+
+  .about-me__title::before {
+    left: 384px;
+  }
+
+  .about-me__about {
+    display: flex;
+    text-align: left;
+  }
+
+  .about-me__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
