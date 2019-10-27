@@ -2,8 +2,6 @@
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-  margin-bottom: 70px;
-
   width: 320px;
   outline: 1px solid red;
 }
@@ -14,7 +12,8 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    width: 764px;
+    margin-top: 0;
+    width: 768px;
   }
 }
 

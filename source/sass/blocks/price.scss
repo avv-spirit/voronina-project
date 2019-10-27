@@ -1,5 +1,7 @@
 .price {
   display: block;
+  width: 320px;
+
   text-align: center;
 }
 
@@ -22,6 +24,18 @@
   height: 30px;
 
   background-color: $pink-line;
+}
+
+.price__coctails-tablet {
+  display: none;
+}
+
+.price__dish-tablet {
+  display: none;
+}
+
+.price__cookies-tablet {
+  display: none;
 }
 
 .price__work-hours {
@@ -49,4 +63,112 @@
 
   font-size: $font-btn;
   font-weight: 600;
+}
+
+@media (min-width: $tablet-width) {
+  .price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+    width: 768px;
+  }
+
+  .price__main-title {
+    margin-top: 50px;
+    font-size: $font-portfolio;
+    letter-spacing: 2px;
+  }
+
+  .price__main-title::before {
+    left: 332px;
+  }
+
+  .price__main-title::after {
+    position: absolute;
+    content: "";
+    width: 26px;
+    height: 20px;
+    top: -115px;
+    right: 239px;
+    background-size: 26px;
+    background-repeat: no-repeat;
+    background-image: url("../img/leaf-2.png");
+  }
+
+  .price__images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .price__work-hours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .price__work-hours:nth-child(1) {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 195px;
+    width: 240px;
+  }
+
+  .price__work-hours:nth-child(2) {
+    margin-top: -122px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 186px;
+  }
+
+  .price__work-hours:nth-child(3) {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 108px;
+    width: 180px;
+  }
+
+  .price__coctails-mobile {
+    display: none;
+  }
+
+  .price__dish-mobile {
+    display: none;
+  }
+
+  .price__cookies-mobile {
+    display: none;
+  }
+
+  .price__coctails-tablet {
+    display: block;
+  }
+
+  .price__dish-tablet {
+    display: block;
+  }
+
+  .price__cookies-tablet {
+    display: block;
+  }
+
+  .price__title {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .price__title-intire {
+    margin-left: 44px;
+  }
+
+  .price__description {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }

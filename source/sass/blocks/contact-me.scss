@@ -24,28 +24,72 @@
   background-color: $pink-line;
 }
 
-.contact-me__skype {
-  letter-spacing: 2px;
-  font-size: $font-btn;
-  font-weight: 600;
-}
-
-.contact-me__email {
-  letter-spacing: 2px;
-  font-size: $font-btn;
-  font-weight: 600;
-}
-
-.contact-me__phone {
-  letter-spacing: 1px;
+.contact-me__wrapper {
   font-size: $font-btn;
   font-weight: 600;
 }
 
 .contact-me__green {
   color: $frame-color;
+}
 
-  letter-spacing: 1px;
-  font-size: $font-nav;
-  font-weight: 600;
+@media (min-width: $tablet-width) {
+  .contact-me {
+    margin-top: 180px;
+  }
+
+  .contact-me__title {
+    margin-bottom: 60px;
+    font-size: $font-portfolio;
+    letter-spacing: 2px;
+  }
+
+  .contact-me__title::before {
+    left: 384px;
+  }
+
+  .contact-me__container {
+    position: relative;
+  }
+
+  .contact-me__container::before {
+    position: absolute;
+    content: "";
+    top: 50px;
+    left: 40px;
+    width: 26px;
+    height: 16px;
+    background-size: 26px;
+    background-repeat: no-repeat;
+    background-image: url("../img/leaf-6.png");
+  }
+
+  .contact-me__container::after {
+    position: absolute;
+    content: "";
+    top: -150px;
+    right: 40px;
+    width: 40px;
+    height: 36px;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-image: url("../img/leaf-4.png");
+  }
+
+  .contact-me__wrapper {
+    font-size: $nav-tablet;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact-me__title {
+    font-size: $font-nav-big;
+    letter-spacing: 2px;
+  }
+
+  .contact-me__wrapper {
+    display: flex;
+    flex-direction: row;
+    font-size: $font-middle;
+  }
 }

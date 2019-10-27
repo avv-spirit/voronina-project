@@ -116,16 +116,92 @@
 
 @media (min-width: $tablet-width) {
   .about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
     width: 768px;
   }
 
+  .about-me::before {
+    position: absolute;
+    content: "";
+    top: 104px;
+    left: 50px;
+    width: 50px;
+    height: 31px;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-image: url("../img/leaf-5.png");
+  }
+
+  .about-me::after {
+    position: absolute;
+    content: "";
+    top: -20px;
+    right: 50px;
+    width: 36px;
+    height: 31px;
+    background-size: 36px;
+    background-repeat: no-repeat;
+    background-image: url("../img/leaf-4.png");
+  }
+
+  .about-me__title {
+    font-size: $font-portfolio;
+    margin-top: 180px;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+  }
+
   .about-me__title::before {
-    left: 384px;
+    top: -100px;
+    left: 52px;
+  }
+
+  .about-me__photos {
+    display: flex;
+  }
+
+  .about-me__left-photo {
+    position: static;
+    margin-right: 26px;
+
+    width: 306px;
+    height: 417px;
+
+    background-image: none;
+  }
+
+  .about-me__left-hand {
+    display: block;
+  }
+
+  .about-me__right-hand {
+    display: block;
+  }
+
+  .about-me__right-photo {
+    position: static;
+    margin-top: 50px;
+
+    width: 306px;
+    height: 417px;
+
+    background-image: none;
+  }
+
+  .about-me__inner-text {
+    display: flex;
+    flex-direction: row;
+    margin-left: -90px;
   }
 
   .about-me__about {
     display: flex;
     text-align: left;
+    width: 290px;
+    margin-top: -30px;
   }
 
   .about-me__container {
@@ -133,5 +209,11 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    margin-top: 10px;
+    margin-left: 14px;
+  }
+
+  .about-me__btn {
+    margin-left: 0;
   }
 }
