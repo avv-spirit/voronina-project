@@ -99,7 +99,7 @@
 
     font-size: $nav-tablet;
     font-weight: bold;
-    border-bottom: 2px solid $black
+    border-bottom: 2px solid $black;
   }
 
   .daria-voronina__link:hover,
@@ -169,39 +169,6 @@
     font-size: 51px;
     z-index: -1;
     color: rgba(255, 255, 255, 0.8);
-  }
-
-  .daria-voronina__description::after {
-    position: absolute;
-    content: "01";
-    top: 284px;
-    left: 20px;
-    width: 40px;
-    height: 30px;
-
-    display: block;
-
-    color: $black;
-
-    font-weight: 400;
-    font-style: italic;
-    text-align: center;
-
-    border-bottom: 2px solid $black;
-  }
-
-  .daria-voronina__description::before {
-    position: absolute;
-    content: "";
-    top: 352px;
-    left: 20px;
-    width: 20px;
-    height: 162px;
-
-    display: block;
-
-    background-repeat: no-repeat;
-    background-image: url("../img/pagination-1.png");
   }
 
   .daria-voronina__social {

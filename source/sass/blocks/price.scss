@@ -38,6 +38,18 @@
   display: none;
 }
 
+.price__coctails-red {
+  display: none;
+}
+
+.price__dish-gray {
+  display: none;
+}
+
+.price__cookies-dish {
+  display: none;
+}
+
 .price__work-hours {
   text-align: center;
 }
@@ -46,13 +58,13 @@
   display: block;
   margin-right: 60px;
 
-  color: $frame-color;
+  color: $frame-green;
   font-weight: bold;
 }
 
 .price__title-intire {
   display: block;
-  margin-left: 124px;
+  margin-left: 122px;
 }
 
 .price__description {
@@ -175,6 +187,160 @@
 
 @media (min-width: $desktop-width) {
   .price {
+    margin-top: 260px;
     width: 1440px;
+  }
+
+  .price__main-title {
+    margin-bottom: 0;
+    font-size: $font-nav-big;
+  }
+
+  .price__main-title::before {
+    top: -140px;
+    left: 720px;
+    height: 40px;
+  }
+
+  .price__main-title::after {
+    width: 30px;
+    height: 30px;
+    top: -170px;
+    right: 510px;
+    background-size: 30px;
+  }
+
+  .price__container {
+    position: relative;
+    width: 1440px;
+  }
+
+  .price__container::before {
+    position: absolute;
+    content: "";
+    width: 52px;
+    height: 26px;
+    top: 40px;
+    left: 150px;
+
+    background-size: 52px;
+    background-repeat: no-repeat;
+    background-image: url("../img/leaf-3.png");
+    transform: rotate(15deg);
+  }
+
+  .price__images {
+    position: relative;
+    margin-top: 200px;
+    align-items: flex-start;
+  }
+
+  .price__work-hours:nth-child(1) {
+    position: relative;
+    padding-top: 170px;
+    width: 414px;
+  }
+
+  .price__work-hours:nth-child(1)::before {
+    position: absolute;
+    content: "";
+    top: 220px;
+    left: -178px;
+    width: 378px;
+    height: 288px;
+    background-color: #f8f8f8;
+    z-index: -1;
+  }
+
+  .price__work-hours:nth-child(2) {
+    position: relative;
+    margin-top: 0;
+    width: 316px;
+  }
+
+  .price__work-hours:nth-child(2)::before {
+    position: absolute;
+    content: "";
+    top: 330px;
+    left: -178px;
+    width: 520px;
+    height: 293px;
+    background-color: #f8f8f8;
+    z-index: -1;
+  }
+
+  .price__work-hours:nth-child(3) {
+    position: relative;
+    padding-top: 198px;
+    width: 316px;
+  }
+
+  .price__work-hours:nth-child(3)::before {
+    position: absolute;
+    content: "INSTAGRAM - FACEBOOK ";
+    top: 380px;
+    right: -214px;
+    width: 184px;
+    height: 20px;
+    letter-spacing: 1px;
+    color: $pink-text;
+    font-size: $font-btn;
+    text-transform: uppercase;
+    transform: rotate(90deg);
+  }
+
+  .price__work-hours:nth-child(3)::after {
+    position: absolute;
+    content: "";
+    top: 250px;
+    right: -178px;
+    width: 378px;
+    height: 338px;
+    background-color: #f8f8f8;
+    z-index: -1;
+  }
+
+  .price__coctails-tablet {
+    display: none;
+  }
+
+  .price__dish-tablet {
+    display: none;
+  }
+
+  .price__cookies-tablet {
+    display: none;
+  }
+
+  .price__coctails-red {
+    display: block;
+  }
+
+  .price__dish-gray {
+    display: block;
+  }
+
+  .price__cookies-dish {
+    display: block;
+  }
+
+  .price__title {
+    margin-top: 36px;
+    font-size: $font-portfolio;
+  }
+
+  .price__title-intire {
+    margin-left: 140px;
+    font-size: $font-middle;
+    font-weight: 600;
+  }
+
+  .price__description {
+    width: 320px;
+    font-size: $font-middle;
+  }
+
+  .price__description-br {
+    display: none;
   }
 }

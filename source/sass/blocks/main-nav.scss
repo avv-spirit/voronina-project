@@ -7,7 +7,7 @@
   margin: 0 auto;
   padding: 0;
 
-  outline: 1px solid red;
+  // outline: 1px solid red;
 }
 
 .main-nav__logo {
@@ -288,7 +288,6 @@
 @media (min-width: $desktop-width) {
   .main-nav {
     width: 1440px;
-    // height: 30px;
   }
 
   .main-nav__logo {
@@ -296,7 +295,7 @@
     height: 76px;
 
     font-size: $font-middle;
-    z-index: 1;
+    z-index: 3;
   }
 
   .main-nav__toggle {

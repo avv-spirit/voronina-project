@@ -253,8 +253,23 @@
   }
 
   .portfolio__coctails--right {
+    position: relative;
     margin-top: 210px;
     width: 314px;
+  }
+
+  .portfolio__coctails--right::before {
+    position: absolute;
+    content: "INSTAGRAM - FACEBOOK ";
+    top: 320px;
+    right: -204px;
+    width: 184px;
+    height: 20px;
+    letter-spacing: 1px;
+    color: $pink-text;
+    font-size: $font-btn;
+    text-transform: uppercase;
+    transform: rotate(90deg);
   }
 
   .portfolio__container {
