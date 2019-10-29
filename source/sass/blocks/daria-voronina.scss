@@ -99,11 +99,12 @@
 
     font-size: $nav-tablet;
     font-weight: bold;
+    border-bottom: 2px solid $black
   }
 
   .daria-voronina__link:hover,
   .daria-voronina__link:active {
-    border-bottom: 2px solid $black;
+    border-bottom: 2px solid $frame-color;
   }
 
   .daria-voronina__social {
@@ -205,5 +206,9 @@
 
   .daria-voronina__social {
     font-size: $font-btn;
+  }
+
+  .daria-voronina__link {
+    font-size: $nav-tablet;
   }
 }

@@ -172,3 +172,9 @@
     margin-right: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .price {
+    width: 1440px;
+  }
+}

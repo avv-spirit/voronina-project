@@ -194,6 +194,7 @@
   .about-me__inner-text {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     margin-left: -90px;
   }
 
@@ -215,5 +216,149 @@
 
   .about-me__btn {
     margin-left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-me {
+    margin-top: 80px;
+    width: 1440px;
+  }
+
+  .about-me::before {
+    top: 92px;
+    left: 190px;
+    width: 54px;
+    height: 34px;
+    background-size: 54px;
+  }
+
+  .about-me::after {
+    top: -480px;
+    right: 170px;
+    width: 54px;
+    height: 48px;
+    background-size: 54px;
+  }
+
+  .about-me__title {
+    font-size: $font-nav-big;
+    margin-bottom: 110px;
+  }
+
+  .about-me__title::before {
+    top: -120px;
+    left: 76px;
+    height: 40px;
+  }
+
+  .about-me__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .about-me__inner-text {
+    position: relative;
+    flex-direction: column;
+    margin-left: 0;
+    padding-left: 40px;
+    padding-top: 114px;
+  }
+
+  .about-me__inner-text::before {
+    position: absolute;
+    content: "";
+
+    top: 80px;
+    right: -70px;
+
+    width: 645px;
+    height: 483px;
+    background-color: $nav-menu;
+    z-index: -1;
+  }
+
+  .about-me__inner-text::after {
+    position: absolute;
+    content: "INSTAGRAM - FACEBOOK ";
+    top: 266px;
+    right: -240px;
+    width: 184px;
+    height: 20px;
+    letter-spacing: 1px;
+    color: $pink-text;
+    font-size: $font-btn;
+    text-transform: uppercase;
+    transform: rotate(90deg);
+  }
+
+  .about-me__container {
+    margin-left: 0;
+  }
+
+  .about-me__mail {
+
+  }
+
+  .about-me__mail,
+  .about-me__tel {
+    margin-bottom: 5px;
+    font-size: $font-middle;
+    font-weight: 500;
+  }
+
+  .about-me__about {
+    margin: 0;
+    width: 330px;
+    font-weight: 500;
+    font-size: $font-middle;
+  }
+
+  .about-me__wrapper::before {
+    position: absolute;
+    content: "";
+    top: -50px;
+    left: -206px;
+
+    width: 378px;
+    height: 338px;
+    background-color: $nav-menu;
+    z-index: -1;
+  }
+
+  .about-me__left-photo {
+    width: 316px;
+    height: 431px;
+  }
+
+  .about-me__left-hand {
+    width: 316px;
+    height: 431px;
+  }
+
+  .about-me__right-photo {
+    width: 316px;
+    height: 431px;
+  }
+
+  .about-me__right-photo {
+    width: 316px;
+    height: 431px;
+  }
+
+  .about-me__work {
+    display: flex;
+    text-align: left;
+
+    width: 313px;
+    font-weight: 500;
+    font-size: $font-middle;
+    font-family: "Source Serif Pro", serif;
+  }
+
+  .about-me__btn {
+    margin-top: 30px;
+    font-size: $nav-tablet;
   }
 }

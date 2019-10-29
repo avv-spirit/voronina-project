@@ -192,11 +192,28 @@
 
 @media (min-width: $desktop-width) {
   .portfolio {
+    padding-top: 280px;
     width: 1440px;
   }
 
   .portfolio__images {
     padding: 0 168px;
+  }
+
+  .portfolio__images::before {
+    width: 80px;
+    height: 50px;
+    top: -92px;
+    left: 140px;
+    background-size: 80px;
+  }
+
+  .portfolio__images::after {
+    width: 60px;
+    height: 28px;
+    top: -30px;
+    right: 134px;
+    background-size: 60px;
   }
 
   .portfolio-title {
@@ -205,8 +222,17 @@
   }
 
   .portfolio-title::before {
-    top: -86px;
+    top: -140px;
     left: 720px;
+    height: 40px;
+  }
+
+  .portfolio-title::after {
+    width: 40px;
+    height: 28px;
+    top: -74px;
+    right: 510px;
+    background-size: 40px;
   }
 
   .portfolio__coctails-tablet--hide {
@@ -222,10 +248,12 @@
   }
 
   .portfolio__coctails--left {
+    margin-top: 180px;
     width: 414px;
   }
 
   .portfolio__coctails--right {
+    margin-top: 210px;
     width: 314px;
   }
 
