@@ -1,8 +1,8 @@
 .body-wrapper {
   display: flex;
   flex-direction: column;
-  width: 320px;
-  margin: 0 auto;
+  align-items: center;
+  width: auto;
 
   font-family: "Source Serif Pro", serif;
   font-weight: 400;
@@ -14,12 +14,13 @@
 
 @media (min-width: $tablet-width) {
   .body-wrapper {
-    width: 768px;
+
+    width: auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .body-wrapper {
-    width: 1440px;
+    width: auto;
   }
 }

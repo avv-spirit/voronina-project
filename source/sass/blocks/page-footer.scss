@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-  width: 320px;
+  width: auto;
   // outline: 1px solid red;
 }
 
@@ -13,12 +13,12 @@
 @media (min-width: $tablet-width) {
   .page-footer {
     margin-top: 0;
-    width: 768px;
+    width: auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    width: 1440px;
+    width: auto;
   }
 }
