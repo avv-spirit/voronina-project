@@ -64,6 +64,16 @@
   display: none;
 }
 
+.portfolio__wrapper {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.portfolio__item {
+  margin: 10px 0;
+}
+
 @media (min-width: $tablet-width) {
   .portfolio {
     display: flex;
@@ -188,6 +198,21 @@
     margin: 0 20px;
     width: 184px;
   }
+
+  .portfolio__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: $nav-menu;
+  }
+
+  .portfolio__item {
+    width: 46%;
+    height: 20%;
+    margin: 20px 10px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -304,5 +329,12 @@
 
   .portfolio__coctails-description {
     font-size: $font-middle;
+  }
+
+  .portfolio__item {
+    display: flex;
+    width: 20%;
+    height: 20%;
+    margin: 20px;
   }
 }

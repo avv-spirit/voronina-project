@@ -172,6 +172,11 @@
   }
 }
 
+.main-nav__active a {
+  color: $nav-text;
+  border-bottom: 3px solid $nav-text;
+}
+
 .main-nav__telnumber {
   display: none;
 }
@@ -287,6 +292,10 @@
     display: block;
     font-weight: 600;
     z-index: 1;
+  }
+
+  .main-nav__active {
+    color: gray;
   }
 }
 
