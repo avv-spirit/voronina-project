@@ -7,8 +7,6 @@
     "@htmlacademy/editorconfig-cli": "^1.0.0",
     "autoprefixer": "^9.6.1",
     "browser-sync": "^2.26.7",
-    "eslint": "^5.16.0",
-    "eslint-config-htmlacademy": "^0.5.2",
     "gulp": "^4.0.2",
     "gulp-csso": "^3.0.1",
     "gulp-imagemin": "^6.0.0",
@@ -47,6 +45,7 @@
     "node": "8.12"
   },
   "dependencies": {
+    "@types/jquery": "^3.3.31",
     "del": "^5.0.0"
   }
 }
