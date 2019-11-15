@@ -359,11 +359,7 @@
       border-bottom: 3px solid $frame-color;
     }
   }
-
-  .main-nav__item:first-child {
-    display: none;
-  }
-
+  
   .main-nav__item:first-child::before {
     display: none;
   }
@@ -374,7 +370,7 @@
 
   .main-nav__telnumber {
     top: 30px;
-    right: 400px;
+    right: 300px;
     color: $black;
   }
 }
